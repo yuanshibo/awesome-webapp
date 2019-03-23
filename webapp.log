@@ -1,0 +1,247 @@
+Sat, 24 Nov 2018 16:29:45 app.py[line:71] DEBUG debug message
+Sat, 24 Nov 2018 16:29:45 app.py[line:72] INFO info message
+Sat, 24 Nov 2018 16:29:45 app.py[line:73] WARNING warning message
+Sat, 24 Nov 2018 16:29:45 app.py[line:74] ERROR error message
+Sat, 24 Nov 2018 16:29:45 app.py[line:75] CRITICAL critical message
+Sat, 24 Nov 2018 16:29:45 selector_events.py[line:64] DEBUG Using selector: EpollSelector
+Sat, 24 Nov 2018 16:29:45 orm.py[line:15] INFO create database connection pool
+Sat, 24 Nov 2018 16:29:45 app.py[line:88] INFO init jinja2...
+Sat, 24 Nov 2018 16:29:45 app.py[line:100] INFO set jinja2 template path: /home/ysb/.ysblocal/workspace/python/awesome-webapp/www/templates
+Sat, 24 Nov 2018 16:29:45 orm.py[line:126] INFO found model: User (table: users)
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: id ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: email ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: passwd ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: admin ==> <BooleanField, boolean:None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: name ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: image ==> <StringField, varchar(500):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: created_at ==> <FloatField, real:None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:126] INFO found model: Blog (table: blogs)
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: id ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: user_id ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: user_name ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: user_image ==> <StringField, varchar(500):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: name ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: summary ==> <StringField, varchar(200):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: content ==> <TextField, text:None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: created_at ==> <FloatField, real:None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:126] INFO found model: Comment (table: comments)
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: id ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: blog_id ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: user_id ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: user_name ==> <StringField, varchar(50):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: user_image ==> <StringField, varchar(500):None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: content ==> <TextField, text:None>
+Sat, 24 Nov 2018 16:29:45 orm.py[line:132] INFO   found mapping: created_at ==> <FloatField, real:None>
+Sat, 24 Nov 2018 16:29:45 coroweb.py[line:188] INFO add route POST /api/blogs => api_create_blog(request, name, summary, content)
+Sat, 24 Nov 2018 16:29:45 coroweb.py[line:188] INFO add route GET /api/blogs/{id} => api_get_blog(id)
+Sat, 24 Nov 2018 16:29:45 coroweb.py[line:188] INFO add route POST /api/users => api_register_user(email, name, passwd)
+Sat, 24 Nov 2018 16:29:45 coroweb.py[line:188] INFO add route POST /api/authenticate => authenticate(email, passwd)
+Sat, 24 Nov 2018 16:29:45 coroweb.py[line:188] INFO add route GET /blog/{id} => get_blog(id)
+Sat, 24 Nov 2018 16:29:45 coroweb.py[line:188] INFO add route GET / => index(request)
+Sat, 24 Nov 2018 16:29:45 coroweb.py[line:188] INFO add route GET /manage/blogs/create => manage_create_blog()
+Sat, 24 Nov 2018 16:29:45 coroweb.py[line:188] INFO add route GET /register => register()
+Sat, 24 Nov 2018 16:29:45 coroweb.py[line:188] INFO add route GET /signin => signin()
+Sat, 24 Nov 2018 16:29:45 coroweb.py[line:188] INFO add route GET /signout => signout(request)
+Sat, 24 Nov 2018 16:29:45 coroweb.py[line:176] INFO add static /static/ => /home/ysb/.ysblocal/workspace/python/awesome-webapp/www/static
+Sat, 24 Nov 2018 16:29:45 app.py[line:187] INFO server started at http://127.0.0.1:9000...
+Sat, 24 Nov 2018 16:29:50 app.py[line:110] INFO Request: GET /
+Sat, 24 Nov 2018 16:29:50 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:50 coroweb.py[line:162] INFO call with args: {'request': <Request GET / >}
+Sat, 24 Nov 2018 16:29:50 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:50 +0000] "GET / HTTP/1.1" 200 5748 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:50 app.py[line:110] INFO Request: GET /www/static/css/uikit.min.css
+Sat, 24 Nov 2018 16:29:50 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:50 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:50 +0000] "GET /www/static/css/uikit.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:50 app.py[line:110] INFO Request: GET /www/static/css/uikit.gradient.min.css
+Sat, 24 Nov 2018 16:29:50 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:50 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:50 +0000] "GET /www/static/css/uikit.gradient.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:50 app.py[line:110] INFO Request: GET /www/static/css/awesome.css
+Sat, 24 Nov 2018 16:29:50 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:50 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:50 +0000] "GET /www/static/css/awesome.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:50 app.py[line:110] INFO Request: GET /www/static/js/uikit.min.js
+Sat, 24 Nov 2018 16:29:50 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:50 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:50 +0000] "GET /www/static/js/uikit.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:50 app.py[line:110] INFO Request: GET /www/static/js/jquery.min.js
+Sat, 24 Nov 2018 16:29:50 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:50 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:50 +0000] "GET /www/static/js/jquery.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:50 app.py[line:110] INFO Request: GET /www/static/js/sha1.min.js
+Sat, 24 Nov 2018 16:29:50 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:50 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:50 +0000] "GET /www/static/js/sha1.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:50 app.py[line:110] INFO Request: GET /www/static/js/sticky.min.js
+Sat, 24 Nov 2018 16:29:50 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:50 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:50 +0000] "GET /www/static/js/sticky.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:50 app.py[line:110] INFO Request: GET /www/static/js/vue.min.js
+Sat, 24 Nov 2018 16:29:50 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:50 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:50 +0000] "GET /www/static/js/vue.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:50 app.py[line:110] INFO Request: GET /www/static/js/awesome.js
+Sat, 24 Nov 2018 16:29:50 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:50 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:50 +0000] "GET /www/static/js/awesome.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:50 app.py[line:110] INFO Request: GET /www/static/js/uikit.min.js
+Sat, 24 Nov 2018 16:29:50 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:50 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:50 +0000] "GET /www/static/js/uikit.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:51 app.py[line:110] INFO Request: GET /www/static/js/sticky.min.js
+Sat, 24 Nov 2018 16:29:51 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:51 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:51 +0000] "GET /www/static/js/sticky.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:51 app.py[line:110] INFO Request: GET /www/static/js/vue.min.js
+Sat, 24 Nov 2018 16:29:51 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:51 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:51 +0000] "GET /www/static/js/vue.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:51 app.py[line:110] INFO Request: GET /www/static/js/awesome.js
+Sat, 24 Nov 2018 16:29:51 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:51 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:51 +0000] "GET /www/static/js/awesome.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:54 app.py[line:110] INFO Request: GET /register
+Sat, 24 Nov 2018 16:29:54 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:54 coroweb.py[line:162] INFO call with args: {}
+Sat, 24 Nov 2018 16:29:54 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:54 +0000] "GET /register HTTP/1.1" 200 6629 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:54 app.py[line:110] INFO Request: GET /www/static/css/uikit.min.css
+Sat, 24 Nov 2018 16:29:54 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:54 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:54 +0000] "GET /www/static/css/uikit.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:54 app.py[line:110] INFO Request: GET /www/static/css/uikit.gradient.min.css
+Sat, 24 Nov 2018 16:29:54 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:54 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:54 +0000] "GET /www/static/css/uikit.gradient.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:54 app.py[line:110] INFO Request: GET /www/static/css/awesome.css
+Sat, 24 Nov 2018 16:29:54 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:54 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:54 +0000] "GET /www/static/css/awesome.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:54 app.py[line:110] INFO Request: GET /www/static/js/jquery.min.js
+Sat, 24 Nov 2018 16:29:54 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:54 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:54 +0000] "GET /www/static/js/jquery.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:54 app.py[line:110] INFO Request: GET /www/static/js/sha1.min.js
+Sat, 24 Nov 2018 16:29:54 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:54 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:54 +0000] "GET /www/static/js/sha1.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:54 app.py[line:110] INFO Request: GET /www/static/js/uikit.min.js
+Sat, 24 Nov 2018 16:29:54 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:54 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:54 +0000] "GET /www/static/js/uikit.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:54 app.py[line:110] INFO Request: GET /www/static/js/sticky.min.js
+Sat, 24 Nov 2018 16:29:54 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:54 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:54 +0000] "GET /www/static/js/sticky.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:54 app.py[line:110] INFO Request: GET /www/static/js/vue.min.js
+Sat, 24 Nov 2018 16:29:54 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:54 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:54 +0000] "GET /www/static/js/vue.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:54 app.py[line:110] INFO Request: GET /www/static/js/awesome.js
+Sat, 24 Nov 2018 16:29:54 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:54 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:54 +0000] "GET /www/static/js/awesome.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:55 app.py[line:110] INFO Request: GET /register
+Sat, 24 Nov 2018 16:29:55 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:55 coroweb.py[line:162] INFO call with args: {}
+Sat, 24 Nov 2018 16:29:55 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:55 +0000] "GET /register HTTP/1.1" 200 6629 "http://127.0.0.1:9000/register" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:55 app.py[line:110] INFO Request: GET /www/static/css/uikit.min.css
+Sat, 24 Nov 2018 16:29:55 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:55 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:55 +0000] "GET /www/static/css/uikit.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/register?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:55 app.py[line:110] INFO Request: GET /www/static/css/uikit.gradient.min.css
+Sat, 24 Nov 2018 16:29:55 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:55 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:55 +0000] "GET /www/static/css/uikit.gradient.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/register?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:55 app.py[line:110] INFO Request: GET /www/static/css/awesome.css
+Sat, 24 Nov 2018 16:29:55 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:55 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:55 +0000] "GET /www/static/css/awesome.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/register?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:55 app.py[line:110] INFO Request: GET /www/static/js/jquery.min.js
+Sat, 24 Nov 2018 16:29:55 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:55 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:55 +0000] "GET /www/static/js/jquery.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:55 app.py[line:110] INFO Request: GET /www/static/js/sha1.min.js
+Sat, 24 Nov 2018 16:29:55 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:55 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:55 +0000] "GET /www/static/js/sha1.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:55 app.py[line:110] INFO Request: GET /www/static/js/uikit.min.js
+Sat, 24 Nov 2018 16:29:55 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:55 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:55 +0000] "GET /www/static/js/uikit.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:55 app.py[line:110] INFO Request: GET /www/static/js/sticky.min.js
+Sat, 24 Nov 2018 16:29:55 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:55 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:55 +0000] "GET /www/static/js/sticky.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:55 app.py[line:110] INFO Request: GET /www/static/js/vue.min.js
+Sat, 24 Nov 2018 16:29:55 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:55 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:55 +0000] "GET /www/static/js/vue.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:55 app.py[line:110] INFO Request: GET /www/static/js/awesome.js
+Sat, 24 Nov 2018 16:29:55 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:55 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:55 +0000] "GET /www/static/js/awesome.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/register?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:59 app.py[line:110] INFO Request: GET /
+Sat, 24 Nov 2018 16:29:59 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:59 coroweb.py[line:162] INFO call with args: {'request': <Request GET / >}
+Sat, 24 Nov 2018 16:29:59 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:59 +0000] "GET / HTTP/1.1" 200 5748 "http://127.0.0.1:9000/register?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:59 app.py[line:110] INFO Request: GET /www/static/css/uikit.min.css
+Sat, 24 Nov 2018 16:29:59 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:59 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:59 +0000] "GET /www/static/css/uikit.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:59 app.py[line:110] INFO Request: GET /www/static/css/uikit.gradient.min.css
+Sat, 24 Nov 2018 16:29:59 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:59 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:59 +0000] "GET /www/static/css/uikit.gradient.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:59 app.py[line:110] INFO Request: GET /www/static/css/awesome.css
+Sat, 24 Nov 2018 16:29:59 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:59 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:59 +0000] "GET /www/static/css/awesome.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:59 app.py[line:110] INFO Request: GET /www/static/js/jquery.min.js
+Sat, 24 Nov 2018 16:29:59 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:59 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:59 +0000] "GET /www/static/js/jquery.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:59 app.py[line:110] INFO Request: GET /www/static/js/sha1.min.js
+Sat, 24 Nov 2018 16:29:59 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:59 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:59 +0000] "GET /www/static/js/sha1.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:59 app.py[line:110] INFO Request: GET /www/static/js/uikit.min.js
+Sat, 24 Nov 2018 16:29:59 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:59 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:59 +0000] "GET /www/static/js/uikit.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:59 app.py[line:110] INFO Request: GET /www/static/js/sticky.min.js
+Sat, 24 Nov 2018 16:29:59 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:59 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:59 +0000] "GET /www/static/js/sticky.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:59 app.py[line:110] INFO Request: GET /www/static/js/vue.min.js
+Sat, 24 Nov 2018 16:29:59 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:59 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:59 +0000] "GET /www/static/js/vue.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:29:59 app.py[line:110] INFO Request: GET /www/static/js/awesome.js
+Sat, 24 Nov 2018 16:29:59 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:29:59 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:29:59 +0000] "GET /www/static/js/awesome.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:30:06 app.py[line:110] INFO Request: GET /
+Sat, 24 Nov 2018 16:30:06 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:30:06 coroweb.py[line:162] INFO call with args: {'request': <Request GET / >}
+Sat, 24 Nov 2018 16:30:06 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:30:06 +0000] "GET / HTTP/1.1" 200 5748 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:30:06 app.py[line:110] INFO Request: GET /www/static/css/uikit.min.css
+Sat, 24 Nov 2018 16:30:06 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:30:06 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:30:06 +0000] "GET /www/static/css/uikit.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:30:06 app.py[line:110] INFO Request: GET /www/static/css/uikit.gradient.min.css
+Sat, 24 Nov 2018 16:30:06 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:30:06 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:30:06 +0000] "GET /www/static/css/uikit.gradient.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:30:06 app.py[line:110] INFO Request: GET /www/static/css/awesome.css
+Sat, 24 Nov 2018 16:30:06 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:30:06 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:30:06 +0000] "GET /www/static/css/awesome.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:30:06 app.py[line:110] INFO Request: GET /www/static/js/jquery.min.js
+Sat, 24 Nov 2018 16:30:06 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:30:06 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:30:06 +0000] "GET /www/static/js/jquery.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:30:06 app.py[line:110] INFO Request: GET /www/static/js/sha1.min.js
+Sat, 24 Nov 2018 16:30:06 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:30:06 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:30:06 +0000] "GET /www/static/js/sha1.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:30:06 app.py[line:110] INFO Request: GET /www/static/js/uikit.min.js
+Sat, 24 Nov 2018 16:30:06 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:30:06 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:30:06 +0000] "GET /www/static/js/uikit.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:30:06 app.py[line:110] INFO Request: GET /www/static/js/sticky.min.js
+Sat, 24 Nov 2018 16:30:06 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:30:06 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:30:06 +0000] "GET /www/static/js/sticky.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:30:06 app.py[line:110] INFO Request: GET /www/static/js/vue.min.js
+Sat, 24 Nov 2018 16:30:06 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:30:06 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:30:06 +0000] "GET /www/static/js/vue.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:30:06 app.py[line:110] INFO Request: GET /www/static/js/awesome.js
+Sat, 24 Nov 2018 16:30:06 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:30:06 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:30:06 +0000] "GET /www/static/js/awesome.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:31:15 app.py[line:110] INFO Request: GET /manage/blogs/create'
+Sat, 24 Nov 2018 16:31:15 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:31:15 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:31:15 +0000] "GET /manage/blogs/create' HTTP/1.1" 404 172 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:31:18 app.py[line:110] INFO Request: GET /manage/blogs/create
+Sat, 24 Nov 2018 16:31:18 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:31:18 coroweb.py[line:162] INFO call with args: {}
+Sat, 24 Nov 2018 16:31:18 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:31:18 +0000] "GET /manage/blogs/create HTTP/1.1" 200 6409 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:31:18 app.py[line:110] INFO Request: GET /www/static/css/uikit.min.css
+Sat, 24 Nov 2018 16:31:18 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:31:18 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:31:18 +0000] "GET /www/static/css/uikit.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/manage/blogs/create" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:31:18 app.py[line:110] INFO Request: GET /www/static/css/uikit.gradient.min.css
+Sat, 24 Nov 2018 16:31:18 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:31:18 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:31:18 +0000] "GET /www/static/css/uikit.gradient.min.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/manage/blogs/create" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:31:18 app.py[line:110] INFO Request: GET /www/static/css/awesome.css
+Sat, 24 Nov 2018 16:31:18 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:31:18 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:31:18 +0000] "GET /www/static/css/awesome.css HTTP/1.1" 404 172 "http://127.0.0.1:9000/manage/blogs/create" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:31:18 app.py[line:110] INFO Request: GET /www/static/js/jquery.min.js
+Sat, 24 Nov 2018 16:31:18 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:31:18 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:31:18 +0000] "GET /www/static/js/jquery.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/manage/blogs/create" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:31:18 app.py[line:110] INFO Request: GET /www/static/js/sha1.min.js
+Sat, 24 Nov 2018 16:31:18 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:31:18 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:31:18 +0000] "GET /www/static/js/sha1.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/manage/blogs/create" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:31:18 app.py[line:110] INFO Request: GET /www/static/js/uikit.min.js
+Sat, 24 Nov 2018 16:31:18 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:31:18 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:31:18 +0000] "GET /www/static/js/uikit.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/manage/blogs/create" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:31:18 app.py[line:110] INFO Request: GET /www/static/js/sticky.min.js
+Sat, 24 Nov 2018 16:31:18 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:31:18 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:31:18 +0000] "GET /www/static/js/sticky.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/manage/blogs/create" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:31:18 app.py[line:110] INFO Request: GET /www/static/js/vue.min.js
+Sat, 24 Nov 2018 16:31:18 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:31:18 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:31:18 +0000] "GET /www/static/js/vue.min.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/manage/blogs/create" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+Sat, 24 Nov 2018 16:31:18 app.py[line:110] INFO Request: GET /www/static/js/awesome.js
+Sat, 24 Nov 2018 16:31:18 app.py[line:129] INFO Response handler...
+Sat, 24 Nov 2018 16:31:18 helpers.py[line:473] INFO 127.0.0.1 [24/Nov/2018:07:31:18 +0000] "GET /www/static/js/awesome.js HTTP/1.1" 404 172 "http://127.0.0.1:9000/manage/blogs/create" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
